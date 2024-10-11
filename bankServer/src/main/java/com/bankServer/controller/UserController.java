@@ -96,19 +96,6 @@ public class UserController {
         }
     }
 
-//    @PostMapping("/users")
-//    public ResponseEntity<User> newUser(@RequestBody User user) {
-//        try {
-//
-//            // Save the user, and accounts will be automatically saved due to CascadeType.ALL
-//            User savedUser = userRepository.save(user);
-//
-//            return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
-
     @PostMapping("/login")
     public ResponseEntity<Map<String, Object>> authenticateUser(@RequestBody User loginRequest) {
         try {
