@@ -19,6 +19,7 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
 
+    @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "userId")
     @JsonBackReference
@@ -26,6 +27,7 @@ public class Account {
 
     @Enumerated(EnumType.STRING)
     private AccountType accountType;
+
     @Column(name = "balance")
     private double balance;
 
