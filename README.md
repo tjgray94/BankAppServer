@@ -1,5 +1,5 @@
 # BankAppServer
-This is the backend API for BankApp, a web application providing banking functionalites such as account creation, deposit, withdrawal, transfer, and user authentication.
+This is the backend API for BankApp, a web application providing banking functionalities such as account creation, user authentication, deposit, withdrawal, transfer, and transaction history logging.
 ### Technologies Used
 - Java
 - Spring Boot
